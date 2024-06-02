@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // Prompt the user for their first name
+let firstName = prompt("Enter your first name:");
+
+// Prompt the user for their last name
+let lastName = prompt("Enter your last name:");
+
+// Concatenate first name and last name to get the full name
+let fullName = firstName + " " + lastName;
+
+// Calculate the total length of the full name
+let fullNameLength = fullName.length;
+
+// Convert the full name to uppercase
+let fullNameUpperCase = fullName.toUpperCase();
+
+// Get the character at the 2nd position (index 1, considering 0-based indexing)
+let secondPositionChar = fullName[1];
+
+// Print the full name
+document.write("Full Name:", fullName ,"<br/>");
+
+// print first name
+document.write("First Namer:", firstName,"<br/>");
+
+//print Last  Name
+document.write("Last Name:", lastName, "<br/>");
+
+// Print the total length of the full name
+document.write("Total Length of Full Name:", fullNameLength, "<br/>");
+
+// Print the full name in uppercase
+document.write("Full Name in Uppercase:", fullNameUpperCase, "<br/>");
+
+// Print the character at the 2nd position of the full name
+document.write("Character at 2nd Position:", secondPositionChar);
+
+    </script>
+</body>
+</html>
