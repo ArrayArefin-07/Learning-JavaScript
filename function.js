@@ -44,3 +44,10 @@ substraction(30, 20);
 })();
 
 
+//Function Expression 
+
+var display2 =  function displayMessage(){
+    console.log("Hi i am message");
+}
+
+display2();
