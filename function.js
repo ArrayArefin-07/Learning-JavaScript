@@ -35,3 +35,12 @@ function substraction(x,y){
 addition(10,20);
 addition(570,430);
 substraction(30, 20);
+
+
+// IIFEs (Immediatelyb Invokeable Function Expression)
+
+(function display(){
+    console.log('Hello');
+})();
+
+
