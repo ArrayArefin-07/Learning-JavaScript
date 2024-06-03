@@ -11,4 +11,4 @@ function square(){
 }
 
 // caling a function
-
+square();
