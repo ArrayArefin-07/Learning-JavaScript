@@ -28,7 +28,7 @@ names.splice(1,2);
 console.log(names)
 
 
-// Slice method ---------
+// Slice method --------- Alphabetic sort
 
 var newArray = names.slice(1);
 console.log(newArray);
@@ -42,3 +42,18 @@ console.log(sortedNames);
 
 names.reverse();
 console.log(sortedNames);
+
+// Number Sort 
+
+var numbers = [20, 5, 25, 45, 1];
+numbers.sort(function(a,b){
+    return a-b;
+});
+console.log(numbers);
+
+// Number Sort Reverse 
+
+numbers.sort(function(a,b){
+    return b-a;
+});
+console.log(numbers)
