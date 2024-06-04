@@ -2,7 +2,7 @@
 //shift method
 
 
-var names = ["Arefin", "Anis", "wakil", ]
+var names = ["Z","Arefin", "Anis", "wakil", ];
 
 console.log(names);
 
@@ -32,3 +32,13 @@ console.log(names)
 
 var newArray = names.slice(1);
 console.log(newArray);
+
+// Sort Method --------
+
+var sortedNames = names.sort();
+console.log(sortedNames);
+
+//reverse sort 
+
+names.reverse();
+console.log(sortedNames);
