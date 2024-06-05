@@ -42,13 +42,28 @@ function Student(name,age,cgpa,lang){
     this.age = age;
     this.cgpa = cgpa;
     this.lang = lang;
+
+    //adding function inside a constructor
+    this.display = function(){
+        console.log(this.name);
+        console.log(this.age);
+        console.log(this.cgpa);
+        console.log(this.lang);
+    }
+
 }
 
+// initilize the valu of  conructor
 var student1 = new Student("Arefin", 24,4.00,["bengali", "Hindi", "English"]);
 var student2 = new Student("Anis", 27,3.00,["bengali", "Portuguese", "English"]);
 var student3 = new Student("Mobasher", 34,2.00,["bengali", "Urdu", "English"]);
 
-console.log(student1.name);
-console.log(student1.age);
-console.log(student1.cgpa);
-console.log(student1.lang);
+// call the function inside the costructor
+student1.display();
+student2.display();
+
+//print using regular Constructor
+// console.log(student1.name);
+// console.log(student1.age);
+// console.log(student1.cgpa);
+// console.log(student1.lang);
