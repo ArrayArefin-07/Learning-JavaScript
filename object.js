@@ -67,3 +67,4 @@ student2.display();
 // console.log(student1.age);
 // console.log(student1.cgpa);
 // console.log(student1.lang);
+
