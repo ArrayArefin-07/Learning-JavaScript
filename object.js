@@ -15,4 +15,21 @@ var student1 = {
     lang : ["bengali", "Hindi", "English"]
 
 }
-console.log(student1.name);
+
+var student2 = {
+    name : "Anis",
+    age : 27,
+    cgpa : 3.92,
+    lang : ["Bengali", "Urdu", "English"]
+
+}
+
+var student3 = {
+    name : "Mobasher",
+    age : 32,
+    cgpa : 2.92,
+    lang : ["Bengali", "Portuguese", "English"]
+
+}
+// print the value of an object
+console.log(student2.name);
