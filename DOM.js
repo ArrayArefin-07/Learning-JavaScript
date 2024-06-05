@@ -9,3 +9,4 @@ document.getElementById("heading2").innerHTML = "Good Bye";
 var myheading2 = document.getElementById("heading2");
 
 myheading2.innerHTML = "Goodbye goodbye";
+
