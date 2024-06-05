@@ -23,3 +23,6 @@ var num2 = parseInt(prompt("Enter second number : "));
 var maximum = Math.max(num1,num2);
 console.log(maximum);
 
+var randomNumber = Math.random();
+console.log(randomNumber);
+
