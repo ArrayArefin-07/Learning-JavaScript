@@ -8,6 +8,13 @@ for (var i = 0; i < 3; i++) {
     });
 }
 
+// add keypress Listener 
+document.addEventListener("keypress", function(event){
+    var text = event.key;
+    playAnimation(text);
+});
+
+
 function playAnimation(text){
     var selectedButton = document.querySelector("."+text);
     selectedButton.classList.add("anim");
