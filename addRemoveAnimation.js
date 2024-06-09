@@ -23,3 +23,11 @@ function playAnimation(text){
         selectedButton.classList.remove("anim");
     }, 1000);
 }
+
+// another example of Keypress Listener 
+
+document.addEventListener("keypress", function(event){
+
+    var text = event.key;
+    document.querySelector("p").innerHTML = "you have pressed " + text;
+});
