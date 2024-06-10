@@ -16,5 +16,8 @@ window.addEventListener("scroll", function(){
 // resize event
 
 window.addEventListener('resize', function(){
-    console.log("resize");
+    // console.log("resize");
+    const width = window.outerWidth;
+    const height = window.outerHeight;
+    console.log(`height: ${height}, width: ${width}`);
 });
