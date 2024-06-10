@@ -12,3 +12,9 @@ window.addEventListener("unload", function(){
 window.addEventListener("scroll", function(){
     console.log("scroll");
 });
+
+// resize event
+
+window.addEventListener('resize', function(){
+    console.log("resize");
+});
