@@ -21,3 +21,11 @@ window.addEventListener('resize', function(){
     const height = window.outerHeight;
     console.log(`height: ${height}, width: ${width}`);
 });
+
+//toggle 
+
+const details = document.querySelector('details');
+
+details.addEventListener("toggle", function(e){
+    console.log(e.target.open);
+});
