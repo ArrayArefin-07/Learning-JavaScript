@@ -21,3 +21,4 @@ input.addEventListener('paste', function() {
     p.innerText = 'you have pasted';
     // console.log('you have pasted');
 });
+
