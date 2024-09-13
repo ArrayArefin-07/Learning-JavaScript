@@ -7,20 +7,22 @@
 // ondragover
 // ondrop
 
-const input =  document.querySelector('p');
-const p =  document.querySelector('div');
+const div = document.querySelector("div");
+const p = document.querySelector("p");
 
-p.addEventListener('dragstart', (e) => {
+p.addEventListener('dragstart', function (e) {
     e.dataTransfer.setData("Text", e.target.id);
     // console.log('drag start');
 }); 
 
-input.addEventListener('cut', function() {
-    p.innerText = 'you have cut';
-    // console.log('you have cut');
+
+div.addEventListener("dragover", function (e) {
+  e.preventDefault();
 });
 
-input.addEventListener('paste', function() {
-    p.innerText = 'you have pasted';
-    // console.log('you have pasted');
-});
+div.addEventListener("drop", function(e) {
+  let id = e.dataTransfer.getData("Text");
+  console.log(id);
+  div.appendChild(document.getElementById(id));
+  e.preventDefault();
+})
