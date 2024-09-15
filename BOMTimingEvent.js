@@ -22,12 +22,27 @@
 const saveButton = document.querySelector(".save-button");
 const message = document.querySelector(".message");
 
-saveButton.addEventListener("click", saveUser);
+// saveButton.addEventListener("click", saveUser);
 
-function saveUser() {
-  message.textContent = "User Registration Successfully";
+// function saveUser() {
+//   message.textContent = "User Registration Successfully";
 
-  setTimeout(() => {
-    message.textContent = "";
-  }, 2000)
+//   setTimeout(() => {
+//     message.textContent = "";
+//   }, 2000)
+// }
+
+
+
+// USes of setInterval() Function 
+
+saveButton.addEventListener('click', displayCount);
+function displayCount(){
+  let count = 0;
+  message.textContent = count;
+
+  setInterval(() => {
+    count++;
+    message.textContent = count;
+  }, 1000);
 }
