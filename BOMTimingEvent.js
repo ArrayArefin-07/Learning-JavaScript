@@ -16,3 +16,18 @@
 // function display() {
 //   console.log("display function");
 // }
+
+// Uses of setTimeout function like real example using button
+
+const saveButton = document.querySelector(".save-button");
+const message = document.querySelector(".message");
+
+saveButton.addEventListener("click", saveUser);
+
+function saveUser() {
+  message.textContent = "User Registration Successfully";
+
+  setTimeout(() => {
+    message.textContent = "";
+  }, 2000)
+}
