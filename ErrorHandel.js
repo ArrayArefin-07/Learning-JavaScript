@@ -6,6 +6,18 @@
 
 try{
 
-}catch() {
+  // code test
+  alert("Hi everyone");
+
+  alert(x)
   
+
+}catch(err){
+  //handle error
+  alert("Inside catch Block");
+  console.log(err);
+  console.log(err.name);
+  console.log(err.message);
+}finally{
+  alert("Bye Everyone");
 }
