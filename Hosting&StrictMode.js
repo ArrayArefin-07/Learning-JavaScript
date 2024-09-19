@@ -13,3 +13,7 @@ if (true){
 
 console.log(`x = ${x}`);
 var x;
+
+"use strict"
+ a = 50;
+ console.log(`a = ${a}`);
