@@ -16,8 +16,20 @@
 
 //let using loop
 
-let x = 11;
-for (let x = 1; x <= 10; x++){
-  // console.log(x);
-}
-console.log(x)
+// let x = 11;
+// for (let x = 1; x <= 10; x++){
+//   // console.log(x);
+// }
+// // console.log(x)
+
+var x = 25;
+var y = 30;
+
+var sum = x + y;
+
+console.log("Sum is " + sum + ". The end");
+console.log(`sum is ${sum} . the end`);
+
+let name = "Mobasher Arefin";
+let message = `I am ${name} I am learning JavaScript`;
+console.log(message);
