@@ -18,3 +18,18 @@ console.log(totalNumbers);
 //concat using spread operator 
 let TotalNumbers = [...numbers, ...numbers3]
 console.log(TotalNumbers)
+
+
+//Object concat  using Spread operator
+let p1 = {
+  name: "Mobasher Arefin",
+  age : 30
+}
+
+let p2 = {
+  nationality: "Bangladeshi",
+  occupation: "student"
+}
+
+let p = {...p1, ...p2}
+console.log(p)
