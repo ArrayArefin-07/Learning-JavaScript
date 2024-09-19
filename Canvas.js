@@ -11,3 +11,11 @@ ctx.fillRect(12,12,367,276);
 
 var centerX = c.width / 2;
 var centerY = c.height / 2;
+
+//create a circle 
+
+ctx.beginPath();
+ctx.arc(centerX,centerY,80,0,2*Math.PI,false);
+ctx.fillStyle = "red";
+ctx.fill();
+ctx.stroke();
