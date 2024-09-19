@@ -33,3 +33,16 @@ console.log(`sum is ${sum} . the end`);
 let name = "Mobasher Arefin";
 let message = `I am ${name} I am learning JavaScript`;
 console.log(message);
+
+
+//Regular Function in js
+
+function add(x,y) {
+  var sum = x + y;
+  console.log(sum);
+}
+
+add(20,30);
+
+
+//Function in ES6
