@@ -29,3 +29,15 @@ numbers.forEach(function(x,index,arr){
   arr[index] = x+5;
 })
 console.log(numbers);
+
+
+// map, filter function 
+var num = [2,3,4,5]
+var squreNum = num.map(function(x){
+  // squreNum.push(x*x);
+  //No need to push in map function just return the value
+  return x * x;
+  
+})
+console.log("Map "+squreNum);
+ 
