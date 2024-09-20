@@ -13,4 +13,5 @@ let students = {
 for(let x in students){
   console.log(x);
   console.log(students[x])
+  console.log(`${x} : ${students[x]}`);
 }
