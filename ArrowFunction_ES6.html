@@ -38,6 +38,46 @@
    //Arrow Function
    const add2 = (num1, num2) => num1+num2;
    console.log(add2(20,30))
+
+   //Arrow function part 2
+   //Regular/Treditional function Using object
+   var students = [
+    {
+      id: 101,
+      name: 'Mobasher Arefin',
+      gpa: 2.65
+    },
+    {
+      id: 102,
+      name: 'Oakil Sarker',
+      gpa: 3.65
+    },
+    {
+      id: 103,
+      name: 'Jazib MAhi',
+      gpa: 3.95
+    },
+    {
+      id: 104,
+      name: 'Siyam SB',
+      gpa: 4.65
+    }
+   ]
+
+   function studentNames1 () {
+    
+    return students.filter(function(x){
+      return x.gpa > 3
+    }).map(function(y){
+      return y.name;
+    });
+   }
+   console.log(studentNames1());
+
+   //uses of Arrow function using object
+
+   const studentName2 = () => students.filter((x) => x.gpa > 3).map((y) => y.name);
+   console.log(studentName2());
   </script>
 </body>
 </html>
