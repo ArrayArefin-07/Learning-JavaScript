@@ -17,5 +17,39 @@ console.log(b);
 
 
 //Object destructure
+
+const studentInfo  = {
+  id: 101,
+  fullName: 'Mobasher Arefin',
+  gap: 3.92
+
+}
+
+const {id, gap} = studentInfo
+
+console.log(id)
+console.log(gap)
+
+
 //Nested Object Destructure
+
+const studentInfo1  = {
+  id: 101,
+  fullName: 'Mobasher Arefin',
+  gap: 3.92,
+  language: {
+    nativ : 'bangla',
+    beginner : 'English'
+  }
+
+}
+
+const {fullName, language} = studentInfo1
+
+
+console.log(language)
+
+
+
+
 //Destructuring Function Parameters
