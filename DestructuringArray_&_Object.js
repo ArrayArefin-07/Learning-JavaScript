@@ -53,3 +53,15 @@ console.log(language)
 
 
 //Destructuring Function Parameters
+
+
+const StudentInfo = ({id, fullName}) => {
+  console.log(`${id}, ${fullName}`)
+}
+
+const student = {
+  id: 101,
+  fullName: "Mobasher Arefin"
+}
+
+StudentInfo(student)
