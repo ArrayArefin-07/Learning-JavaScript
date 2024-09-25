@@ -48,12 +48,19 @@ const taskFive = () => {
   console.log("Task-5");
 };
 
-taskOne(function f1() {
-  taskTwo(function f2() {
-    taskThree(function f3() {
-      taskFour(function f4() {
+taskOne(() => {
+  taskTwo(() => {
+    taskThree(() => {
+      taskFour(() => {
         taskFive();
       })
     });
   });
 });
+
+console.log('hi');
+document.querySelector("button").addEventListener('click', ()=>{
+  console.log('button is clicked');
+})
+
+console.log('bye');
