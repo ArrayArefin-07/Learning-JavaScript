@@ -86,3 +86,4 @@ taskOne()
 .then((res) => console.log(res))
 .then(taskFour)
 .then((res) => console.log(res))
+.catch((err) => console.log(err));
