@@ -8,7 +8,7 @@ const makeRequest = (method, url, data) => {
   const xhr = new XMLHttpRequest();
   xhr.open(method, url);
 
-  xhr.setRequestHeader('Content-Type', 'application/json');
+  xhr.setRequestHeader("Content-Type", "application/json");
 
   xhr.onload = () => {
     let data = xhr.response;
@@ -34,7 +34,25 @@ const sendData = () => {
   });
 };
 
-sendData();
+//update data in api
+const updateData = () => {
+  makeRequest("PUT", "https://jsonplaceholder.typicode.com/posts/1", {
+    id: 1,
+    title: "fooNA",
+    body: "barMA",
+    userId: 1,
+  });
+};
 
+//Update single data
+const updateSingleData = () => {
+  makeRequest("PATCH", "https://jsonplaceholder.typicode.com/posts/1", {
+    title: "This is changed",
+  });
+};
+
+// sendData();
+updateData();
+updateSingleData();
 
 //last watch 17:00 min
