@@ -51,8 +51,14 @@ const updateSingleData = () => {
   });
 };
 
+//Delete Data in API
+const deleteData = () => {
+  makeRequest("DELETE", "https://jsonplaceholder.typicode.com/posts/1", {});
+};
+
 // sendData();
-updateData();
-updateSingleData();
+// updateData();
+// updateSingleData();
+deleteData();
 
 //last watch 17:00 min
