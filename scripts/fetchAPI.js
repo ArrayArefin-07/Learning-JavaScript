@@ -12,7 +12,7 @@
 
 console.clear();
 fetch("https://jsonplaceholder.typicode.com/posts/1", {
-  method: "PATCH",
+  method: "DELETE",
   headers: {
     "Content-type": "application/json; charset=UTF-8",
   },
