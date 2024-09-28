@@ -11,15 +11,15 @@
 // - dose not support all the older browser
 
 console.clear();
-fetch("https://jsonplaceholder.typicode.com/posts", {
-  method: "POST",
+fetch("https://jsonplaceholder.typicode.com/posts/1", {
+  method: "PATCH",
   headers: {
     "Content-type": "application/json; charset=UTF-8",
   },
   body: JSON.stringify({
-    title: "foo",
-    body: "bar",
-    userId: 1,
+   
+    title: "fooMANAAAAAAAAAA",
+   
   }),
 })
   .then((res) => {
