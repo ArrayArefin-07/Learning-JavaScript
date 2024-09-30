@@ -22,7 +22,8 @@ const makeRequest = async (url, method, data) => {
 
 //Delete data using jquery DELETE method
 const deleteData = () => {
-  makeRequest("https://jsonplaceholder.typicode.com/posts/1", "DELETE").then(
+  makeRequest("https://jsonplaceholder.typicode.com/posts/1", "DELETE")
+  .then(
     (res) => console.log(res)
   );
 };
