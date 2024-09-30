@@ -81,20 +81,27 @@ const makeRequest = async (config) => {
   return await axios(config);
 };
 
-const createData = () => {
+
+// update data
+const updateData = () => {
   makeRequest({
     url: "https://jsonplaceholder.typicode.com/posts",
     method: "post",
     data: JSON.stringify({
-      title: "Naafoo",
-      body: "bar",
+      id: 1,
+      title: "NaafooNaaaaaa",
+      body: "barNaaaa",
       userId: 1,
     }),
   })
-    .then((res) => console.log(res))
+    .then((res) => console.log(res.data))
     .catch((err) => console.log(err));
 };
-createData();
+updateData();
+
+
+
+
 
 //create data 
 
