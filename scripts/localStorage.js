@@ -46,3 +46,9 @@ const countries = ["Australia", "Bangladesh", "Nepal"];
 localStorage.setItem("countries", JSON.stringify(countries));
 localStorage.setItem("password", "0123456789");
 
+
+//usecase for array
+//get data from local storage 
+// getItem(key)
+const countriesList = JSON.parse(localStorage.getItem("countries"));
+console.log(countriesList);    
