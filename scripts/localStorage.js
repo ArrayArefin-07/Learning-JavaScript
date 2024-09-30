@@ -14,6 +14,7 @@
 // console.log(localStorage);
 
 // set data in localStorage
+// for string
 // setItem(key, value)
 // localStorage.setItem("userName", "Mobasher Arefin");
 // localStorage.setItem("password", "123456789");
@@ -36,3 +37,12 @@ localStorage.setItem("password", "123456789");
 
 localStorage.removeItem("userName");
 localStorage.removeItem("password");
+
+
+//usecase for array
+// set data in localStorage
+// setItem(key, value)
+const countries = ["Australia", "Bangladesh", "Nepal"];
+localStorage.setItem("countries", JSON.stringify(countries));
+localStorage.setItem("password", "0123456789");
+
