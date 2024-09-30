@@ -63,3 +63,18 @@ axios
 })
 .then((res) => console.log(res.data))
 .catch((err) => console.log(err));
+
+// axios.patch method
+
+axios
+.patch("https://jsonplaceholder.typicode.com/posts/1", {
+  method: 'PATCH',
+  body: JSON.stringify({
+    
+    body: 'barNaaaaaaaaaaa',
+    
+  }),
+ 
+})
+.then((res) => console.log(res.data))
+.catch((err) => console.log(err));
