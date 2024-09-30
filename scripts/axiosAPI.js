@@ -9,3 +9,27 @@
 // + it returns promise
 // + throws error brilliantly
 // + no need to set heder cause axios is intelligent
+
+
+//axios (config)
+// axios(url [, config])
+
+//axios.get(url [, config])
+//axios.post(url [, config])
+//axios.put(url [, config])
+//axios.patch(url [, config])
+//axios.delete(url [, config])
+
+//axios return response object - data, status, statusText. header, config 
+
+
+console.clear();
+// console.log(window);
+
+// axios.get method
+axios
+.get("https://jsonplaceholder.typicode.com/posts")
+.then((res) => console.log(res.data))
+.catch((err) => console.log(err));
+
+// 
