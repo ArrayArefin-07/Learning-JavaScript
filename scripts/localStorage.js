@@ -52,3 +52,6 @@ localStorage.setItem("password", "0123456789");
 // getItem(key)
 const countriesList = JSON.parse(localStorage.getItem("countries"));
 console.log(countriesList);    
+
+
+localStorage.clear();
