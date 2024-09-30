@@ -20,16 +20,32 @@ const makeRequest = async (url, method, data) => {
   }
 };
 
-//Create data using jquery post method
-const createData = () => {
+//Update data using jquery PUT method
+const updateData = () => {
   makeRequest("https://jsonplaceholder.typicode.com/posts", "POST", {
-    title: "foo",
-    body: "bar",
+    id: 1,
+    title: "fooMAAAAA",
+    body: "barMAAAA",
     userId: 1,
   }).then((res) => console.log(res));
 };
 
-createData();
+updateData();
+
+
+
+// //Create data using jquery post method
+// const createData = () => {
+//   makeRequest("https://jsonplaceholder.typicode.com/posts", "POST", {
+//     title: "foo",
+//     body: "bar",
+//     userId: 1,
+//   }).then((res) => console.log(res));
+// };
+
+// createData();
+
+
 
 // //get data using jquery
 // const getData = () => {
