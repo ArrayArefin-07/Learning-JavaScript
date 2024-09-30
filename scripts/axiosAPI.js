@@ -82,22 +82,34 @@ const makeRequest = async (config) => {
 };
 
 
-// update data
-const updateData = () => {
+// delete data
+const deleteData = () => {
   makeRequest({
-    url: "https://jsonplaceholder.typicode.com/posts",
-    method: "post",
-    data: JSON.stringify({
-      id: 1,
-      title: "NaafooNaaaaaa",
-      body: "barNaaaa",
-      userId: 1,
-    }),
+    url: "https://jsonplaceholder.typicode.com/posts/1",
+    method: "delete",
   })
     .then((res) => console.log(res.data))
     .catch((err) => console.log(err));
 };
-updateData();
+deleteData();
+
+
+// // update data
+// const updateData = () => {
+//   makeRequest({
+//     url: "https://jsonplaceholder.typicode.com/posts",
+//     method: "put",
+//     data: JSON.stringify({
+//       id: 1,
+//       title: "NaafooNaaaaaa",
+//       body: "barNaaaa",
+//       userId: 1,
+//     }),
+//   })
+//     .then((res) => console.log(res.data))
+//     .catch((err) => console.log(err));
+// };
+// updateData();
 
 
 
