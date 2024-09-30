@@ -11,7 +11,7 @@ const makeRequest = async (url, method, data) => {
     const result = await $.ajax({
       url: url,
       method: method,
-      data: data
+      data: data,
     });
     // console.log(result);
     return result;
@@ -20,19 +20,26 @@ const makeRequest = async (url, method, data) => {
   }
 };
 
-//Update data using jquery PUT method
-const updateData = () => {
-  makeRequest("https://jsonplaceholder.typicode.com/posts", "POST", {
-    id: 1,
-    title: "fooMAAAAA",
-    body: "barMAAAA",
-    userId: 1,
-  }).then((res) => console.log(res));
+//Delete data using jquery DELETE method
+const deleteData = () => {
+  makeRequest("https://jsonplaceholder.typicode.com/posts/1", "DELETE").then(
+    (res) => console.log(res)
+  );
 };
 
-updateData();
+deleteData();
 
+// //Update data using jquery PUT method
+// const updateData = () => {
+//   makeRequest("https://jsonplaceholder.typicode.com/posts", "POST", {
+//     id: 1,
+//     title: "fooMAAAAA",
+//     body: "barMAAAA",
+//     userId: 1,
+//   }).then((res) => console.log(res));
+// };
 
+// updateData();
 
 // //Create data using jquery post method
 // const createData = () => {
@@ -44,8 +51,6 @@ updateData();
 // };
 
 // createData();
-
-
 
 // //get data using jquery
 // const getData = () => {
