@@ -6,9 +6,30 @@
 // memorie- 10mb  vs  5mb
 // permanent  vs  session (tab)
 
+// for string
 //set data to sessionStorage
-sessionStorage.setItem("user", "Arefin");   
+// sessionStorage.setItem("user", "Arefin");   
 
-//get data to sessionStorage
-const userName = sessionStorage.getItem("user");
-console.log(userName)
+//get data from sessionStorage
+// const userName = sessionStorage.getItem("user");
+// console.log(userName)
+
+//remove data from sessionStorage
+// sessionStorage.removeItem("user");
+
+// cleare data from sessionStorage
+// sessionStorage.clear();
+
+
+
+//usecase for array
+//set data from Session storage 
+
+
+const user = { id: "101", name: "Mobasher"};
+sessionStorage.setItem("user",JSON.stringify(user));
+
+//get data from Session storage 
+
+const userInfor = JSON.parse(sessionStorage.getItem("user"));
+console.log(userInfor);
