@@ -55,3 +55,6 @@ console.log(countriesList);
 
 
 localStorage.clear();
+
+
+//start from session storage
